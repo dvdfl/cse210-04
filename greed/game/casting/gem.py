@@ -1,6 +1,6 @@
-from game.moving_object import MovingObject
+from game.casting.moving_object import MovingObject
 
-class Rock(MovingObject):
+class Gem(MovingObject):
     """
     Represents the rock (o) objecs
     Inherits from MovingObject
@@ -12,12 +12,13 @@ class Rock(MovingObject):
         """Constructs a new Rock object.
         """
         super().__init__()
-        super().set_text("o")
-        self._points_value = -1
+        super().set_text("*")
+        self._points_value = 1
 
     def get_points(self):
-        """        Returns:
+        """Returns points value of the object.
+        
+        Returns:
             points (int): Points value of the object if intersected by player.
         """
         return self._points_value
-    

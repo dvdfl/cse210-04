@@ -1,4 +1,3 @@
-from email import message
 from game.common.coordinate import Coordinate
 
 
