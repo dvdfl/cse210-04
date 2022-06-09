@@ -20,7 +20,6 @@ FONT_SIZE = 15
 COLS = 60
 ROWS = 40
 CAPTION = "Greed"
-# DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + "/data/messages.txt"
 WHITE = Color(255, 255, 255)
 DEFAULT_ARTIFACTS = 50
 
@@ -52,8 +51,6 @@ def main():
     
 
     for n in range(DEFAULT_ARTIFACTS):
-        text = chr(random.randint(33, 126))
-        #message = messages[n]
 
         x = random.randint(1, COLS - 1)
         y = random.randint(1, ROWS - 1)
@@ -65,17 +62,16 @@ def main():
         b = random.randint(0, 255)
         color = Color(r, g, b)
         
-        # artifact = Rock()#Artifact()
+        # randomly generating Gems and Rocks
         if (random.randint(1, 2) % 2) == 0:
             artifact = Rock()
         else:
             artifact = Gem()
 
-        # artifact.set_text(text)
+        
         artifact.set_font_size(FONT_SIZE)
         artifact.set_color(color)
         artifact.set_position(position)
-        #artifact.set_message(message)
         cast.add_actor("artifacts", artifact)
     
     # start the game

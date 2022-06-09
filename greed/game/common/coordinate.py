@@ -1,9 +1,9 @@
-"""
-    The responsibility of Coordinate is to hold and provide information about itself. Coordinate has a few 
-    convenience methods for adding, scaling, and comparing them.
-"""
 
 class Coordinate:
+    """
+        The responsibility of Coordinate is to hold and provide information about itself. Coordinate has a few 
+        convenience methods for adding, scaling, and comparing them.
+    """
     def __init__(self, x, y):
         ''' Constructs the new location with the given x and y values
         Args:
