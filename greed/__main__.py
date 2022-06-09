@@ -1,10 +1,10 @@
 from game.services.keyboard_service import KeyboardService
 from game.services.video_service import VideoService
-from game.cast import Cast
+from game.casting.cast import Cast
 from game.director import Director
-from game.moving_object import MovingObject
-from game.rock import Rock
-from game.gem import Gem
+from game.casting.moving_object import MovingObject
+from game.casting.rock import Rock
+from game.casting.gem import Gem
 from game.common.coordinate import Coordinate
 from game.common.color import Color
 import random
